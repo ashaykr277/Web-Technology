@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 2 - HTML Tables</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    code {
+      background-color: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-left: 4px solid #3498db;
+      overflow-x: auto;
+    }
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📘 HTML Tables - Summary and Notes</h1>
+
+  <h2>🎯 Objective</h2>
+  <p>Understand how to create and structure tables using HTML, including rows, columns, headers, and advanced attributes like <code>rowspan</code> and <code>colspan</code>.</p>
+
+  <h2>🔤 Basic Table Tags</h2>
+  <ul>
+    <li><code>&lt;table&gt;</code>: Defines a table.</li>
+    <li><code>&lt;tr&gt;</code>: Defines a row in a table.</li>
+    <li><code>&lt;td&gt;</code>: Defines a standard data cell.</li>
+    <li><code>&lt;th&gt;</code>: Defines a header cell (bold and centered by default).</li>
+  </ul>
+
+  <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alice&lt;/td&gt;
+    &lt;td&gt;24&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+  <h2>📏 Table Attributes</h2>
+  <ul>
+    <li><code>border="1"</code>: Adds a visible border to the table.</li>
+    <li><code>cellpadding</code>: Adds space inside each cell.</li>
+    <li><code>cellspacing</code>: Adds space between cells.</li>
+    <li><code>width</code> / <code>height</code>: Set the size of the table or its cells.</li>
+  </ul>
+
+  <pre><code>&lt;table border="1" cellpadding="10" cellspacing="5" width="300"&gt;
+  ...
+&lt;/table&gt;
+</code></pre>
+
+  <h2>🔁 Advanced Table Tags</h2>
+
+  <h3>1. <code>colspan</code></h3>
+  <p>Merges multiple columns into one cell.</p>
+  <pre><code>&lt;td colspan="2"&gt;Merged Column&lt;/td&gt;</code></pre>
+
+  <h3>2. <code>rowspan</code></h3>
+  <p>Merges multiple rows into one cell.</p>
+  <pre><code>&lt;td rowspan="2"&gt;Merged Row&lt;/td&gt;</code></pre>
+
+  <h2>🧪 Example of rowspan and colspan</h2>
+
+  <pre><code>&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th colspan="2"&gt;Details&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alice&lt;/td&gt;
+    &lt;td&gt;24&lt;/td&gt;
+    &lt;td&gt;Engineer&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan="2"&gt;Bob&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+    &lt;td&gt;Designer&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;31&lt;/td&gt;
+    &lt;td&gt;Developer&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+  <h2>📌 Best Practices</h2>
+  <ul>
+    <li>Use <code>&lt;th&gt;</code> for headers to improve accessibility.</li>
+    <li>Use <code>&lt;caption&gt;</code> to add a title to the table.</li>
+    <li>Avoid inline styling for large projects—use CSS instead.</li>
+  </ul>
+
+  <pre><code>&lt;table&gt;
+  &lt;caption&gt;Employee Details&lt;/caption&gt;
+&lt;/table&gt;
+</code></pre>
+
+  <h2>✅ Key Takeaways</h2>
+  <ul>
+    <li>Tables organize data in rows and columns.</li>
+    <li><code>rowspan</code> and <code>colspan</code> are powerful for complex layouts.</li>
+    <li>Proper structure and semantics help screen readers and SEO.</li>
+  </ul>
+
+</body>
+</html>
