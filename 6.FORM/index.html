@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<!-- <style>
+    body{
+        font-family: poppins;
+    }
+    .container {
+        background-color: #aeb6b84f;
+        display: inline-block;
+        padding: 50px;
+        /* border: 2px solid #a09e9e; */
+        border-radius: 20px;
+    }
+    button{
+        background-color: #fff;
+        padding:10px 20px;
+        border-radius: 5px;
+        border: none;
+    }
+    input{
+        /* background-color: #dadada65; */
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+
+</style> -->
+
+<body>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="user"></label>
+                <input type="text" placeholder="username" id="user" name="user">
+                <br>
+                <br>
+                <label for="email" placeholder=""></label>
+                <input type="email" id="email" placeholder="email" name="ashayemail">
+                <br>
+                <br>
+                
+                <label for="pwd" placeholder=""></label>
+                <input type="password" id="pwd" placeholder="password" name="pwd">
+                <br>
+                <br>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="others">Others
+                <br>
+            </fieldset>
+            <br>
+            <!-- <button>Login</button> -->
+            <br>
+            <br>
+            <fieldset>
+                <legend>Skills</legend>
+
+                <label for="">SKILLS :</label>
+                <input type="checkbox" name="skill" value="html">HTML
+                <input type="checkbox" name="skill" value="html">CSS
+                <input type="checkbox" name="skill" value="html">JS
+                <br>
+                <br>
+                
+                <label for="">Select a vehicle</label>
+                <select name="" id="">
+                    <option value="">- - -</option>
+                    <optgroup label="cars">
+                        <option value="bmw">BMW</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="jaguar">Jaguar</option>
+                        <option value="supra">Supra</option>
+                        <option value="fortuner">Fortuner</option>
+                        <option value="porsche">Porsche</option>
+                        <option value="laborghini">Lamborghini</option>
+                        <option value="ferrari">Ferrari</option>
+                        <option value="mustang">Mustang</option>
+                        <option value="buggati">Buggati</option>
+                        <option value="rolls royce">Rolls Royle</option>
+                        <option value="elonmusk">Tesla</option>
+                        <option value="thar">Thar</option>
+                        <option value="audi">Audi</option>
+                    </optgroup>
+                    <optgroup label="Bikes">
+                        <option value="">Jawa</option>
+                        <option value="">Hero</option>
+                        <option value="">Honda</option>
+                        <option value="">KTM</option>
+                        <option value="">Yamaha R15</option>
+                        <option value="">Yamaha FX-Z</option>
+                        <option value="">TVS</option>
+                        <option value="">Kawasaki Ninja</option>
+                        <option value="">BMW</option>
+                        <option value="">Royal Enfield</option>
+                        <option value="">Pulsar</option>
+                        <option value="">Passion Pro</option>
+                        <option value="">Splendor</option>
+                    </optgroup>
+                    
+                </select>
+            </fieldset>
+            </form>
+        </div>
+    </body>
+    
+</html>

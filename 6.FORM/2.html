@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon</title>
+</head>
+<style>
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    table{
+        border: 2px solid rgb(197, 196, 196);
+        padding: 20px;
+        border-radius: 10px;
+    }
+    button{
+        padding:10px 20px;
+        background-color: #d4cdcd;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+</style>
+<body>
+    <center>
+        <form action="">
+
+            <h3>Marathon Registration</h3>
+            <table border="0" cellpadding="10px" >
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age</label></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <input type="radio" name="gender">Others
+                </td>
+            </tr>
+            <tr>
+                <td>Age Group
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="">--select age group--</option>
+                        <option value="old">Old</option>
+                        <option value="adult">Adult</option>
+                        <option value="kids">Kids</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br>
+        
+        <button>Submit</button>
+    </form>
+    </center>
+    
+</body>
+</html>
