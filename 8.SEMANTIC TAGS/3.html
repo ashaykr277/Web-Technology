@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0px 100px;
+
+    }
+    nav{
+        padding: 10px;
+        display: flex;
+        justify-content:space-between ;
+        align-items: center;
+        background-color: #ffffff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.367) ;
+    }
+    button{
+        padding: 10px;
+        border-radius: 5px;
+        border:none;
+    }
+    input{
+        width: 300px;
+        height: 30px;
+        border-radius:20px;
+        border: 1px solid black;
+    }
+    video{
+        height: auto;
+        width: 500px;
+    }
+</style>
+<body>
+    <div>
+        <nav>
+            <div class="logo">MyTube</div>
+            <div>
+                <input type="search">
+                <button>Search</button>
+            </div>
+            <div class="account">
+                <button>My Profile</button>
+            </div>
+
+        </nav>
+    </div>
+    <table border="1" cellpadding="10px">
+        <tr>
+            <td>
+                <video src="./Assets/Video/Black Myth： Wukong .mp4" width="500px" poster="./aot.jpg" controls>
+                    <figcaption>Hello</figcaption>
+                </video>
+            </td>
+            <td>
+                <video src="./Assets/Video/AOT1.mp4" width="500px" poster="./Assets/Images/Eren.jpg" controls></video>
+            </td>
+            <td>
+                <video src="./Assets/Video/Demon Slayer Mugen Train.mp4" width="500px" poster="./Assets/Images/rengoku1.jpg" controls></video>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <video src="./Assets/Video/Black Myth： Wukong .mp4" width="500px" poster="./Assets/Images/rengoku.jpg" controls>
+                    <figcaption>Hello</figcaption>
+                </video>
+            </td>
+            <td>
+                <video src="./Assets/Video/AOT1.mp4" width="500px" poster="./Assets/Images/obito.png" controls></video>
+            </td>
+            <td>
+                <video src="./Assets/Video/Demon Slayer Mugen Train.mp4" width="500px" poster" controls></video>
+
+            </td>
+        </tr>
+        <tr></tr>
+    </table>
+</body>
+</html>
